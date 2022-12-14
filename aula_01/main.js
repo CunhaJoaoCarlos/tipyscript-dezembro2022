@@ -18,5 +18,34 @@ preferencias.push("Cacatua");
 console.table(preferencias);
 console.log(`tipo da variavel preferencias ${typeof (preferencias)}`);
 console.log(`Meu nome é ${nome_completo} trabalho com ${profissao} gosto de ${preferencias.join()} `);
-function exemplo() {
+function procedimentos() {
+}
+function retorna10() {
+    return 10;
+}
+console.log(`A funcao retornou ${retorna10()}`);
+let retorno = retorna10();
+console.log(`A variavel retorno aproveito a funcao e resulto em ${retorno}`);
+function somar(numeroA, numeroB) {
+    return numeroA + numeroB;
+}
+console.log(`Ao somar 5 com 6 deu ${somar(5, 6)}`);
+function subtrair(numeroA, numeroB) {
+    return numeroA - numeroB;
+}
+let subtraido = subtrair(20, 5);
+function ehPar(numero) {
+    return numero % 2 == 0;
+    // if (numero % 2 == 0) {
+    //     return "Par"
+    // } else {
+    //     return "Impar"
+    // }
+    //return (numero%2==0)?"Par":"Impar"
+}
+function salvarNoLocalStorage(valor, chave) {
+    localStorage.setItem(chave, valor);
+}
+function capturarValor() {
+    return prompt(`Informe o valor de ${titulo}`);
 }
